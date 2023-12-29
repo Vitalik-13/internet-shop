@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Borel", cursive;
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+.header {
+  height: 70px;
+  width: 100%;
+  background-color: green;
+  position: fixed;
+  z-index: 1;
+  box-shadow: -2px 10px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 10px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 10px 11px 0px rgba(0, 0, 0, 0.75);
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: center;
+}
+.card-text-content {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  right: 0;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+.card-wrapper {
+  position: fixed;
+  z-index: 1;
+  width: 50%;
+  height: 90%;
+  top: 70px;
+  border-radius: 20px;
+  border: 5px solid green;
+  background-color: white;
+  display: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.closest {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-image: url(image/icons8-крестик-50.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(image/icons8-тележка-из-магазина-50.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.main-title {
+  margin: 100px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.total-foto {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.total-foto:hover {
+  transform: scale(1.2);
+}
+.total-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+.list-item {
+  padding: 30px 50px;
+  margin-bottom: 40px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.9s ease;
+}
+.list-item:hover {
+  box-shadow: 6px 9px 11px -3px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 6px 9px 11px -3px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 6px 9px 11px -3px rgba(0, 0, 0, 0.76);
+}
+.total-title {
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+.paragraph {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.wrapper-price-container {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.add-button {
+  padding: 15px 25px;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.add-button:hover {
+  background-color: rgb(2, 74, 2);
+}
+.my-card {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.item {
+  padding: 15px 40px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+.text {
+  display: none;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+.new-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+
+  border-bottom: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+.remove-button {
+  padding: 10px 15px;
+  text-align: center;
+  background-color: red;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+}
+.total-price {
+  display: none;
+  position: absolute;
+  right: 7%;
+  bottom: -25px;
+  color: black;
+}
+.inputPrice {
+  width: 50px;
+}
+.plus {
+  display: inline-block;
+  width: 22px;
+  height: 24px;
+  font-size: 15px;
+}
